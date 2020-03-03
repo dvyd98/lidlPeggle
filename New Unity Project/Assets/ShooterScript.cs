@@ -6,18 +6,20 @@ using UnityEngine;
 public class ShooterScript : MonoBehaviour
 {
     public GameObject projectile;
+    public Boolean isBallAlive;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isBallAlive = false;
     }
 
     // Update is called once per frame
     private void Update()
     {
         lookAtMouse();
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && !isBallAlive)
         {
+            isBallAlive = true;
             spawnProjectile();
         }
     }
