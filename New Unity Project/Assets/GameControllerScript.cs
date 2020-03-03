@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameControllerScript : MonoBehaviour
 {
     public static bool gameOver = false;
+    public int score = 0;
 
     private GameObject shooter;
     private ShooterScript shooterScript;
@@ -12,6 +13,7 @@ public class GameControllerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         shooter = GameObject.FindGameObjectWithTag("Shooter");
         shooterScript = shooter.GetComponent<ShooterScript>();
         shooterScript.onBallFired.AddListener(updateCounter);

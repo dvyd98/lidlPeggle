@@ -66,6 +66,7 @@
     <Compile Include="Assets\CatcherScript.cs" />
     <Compile Include="Assets\GameControllerScript.cs" />
     <Compile Include="Assets\PeggleScript.cs" />
+    <Compile Include="Assets\ScoreScript.cs" />
     <Compile Include="Assets\ShooterScript.cs" />
     <Compile Include="Assets\TextUpdaterScript.cs" />
     <Reference Include="Unity.Timeline.Editor">

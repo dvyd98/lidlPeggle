@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6307609057387493959}
   - component: {fileID: 4039738451627015552}
   - component: {fileID: -7419986416319402514}
+  - component: {fileID: -3286629000820136288}
   m_Layer: 0
   m_Name: Peggle
   m_TagString: Untagged
@@ -128,5 +129,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3e77d0e18e91ec4b8a9d7dd89f0ed09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+--- !u!114 &-3286629000820136288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6307609057387493952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac29351ef746744fa8ec1c5f0d49796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

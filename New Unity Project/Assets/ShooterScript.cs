@@ -23,7 +23,7 @@ public class ShooterScript : MonoBehaviour
     void Start()
     {
         isBallAlive = false;
-        ballsLeft = 5;
+        ballsLeft = 15;
     }
 
     // Update is called once per frame
