@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class OrangePeggleScript : PeggleScript
+public class BluePeggleScript : PeggleScript
 {
-    public static UnityEvent onOrangePeggleGot = new UnityEvent();
+    public static UnityEvent onBluePeggleGot = new UnityEvent();
 
     override public void SetUp()
     {
-        points = 25;
+        points = 5;
     }
 
     public override void ProcessEvents()
     {
-        Debug.Log("Orange peggle hit event");
+        Debug.Log("Blue peggle hit event");
     }
 }

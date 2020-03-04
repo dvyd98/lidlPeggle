@@ -47,10 +47,16 @@ public class PeggleScript : MonoBehaviour
         {
             state = (int)STATE.DYING;
             onPeggleGot.Invoke(points);
+            ProcessEvents();
         }
     }
 
     public virtual void SetUp()
+    {
+
+    }
+
+    public virtual void ProcessEvents()
     {
 
     }
