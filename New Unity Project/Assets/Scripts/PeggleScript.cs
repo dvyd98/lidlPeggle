@@ -13,7 +13,7 @@ public class PeggleScript : MonoBehaviour
 
     }
 
-    public const int points = 5;
+    public int points = 5;
 
     public static OnPeggleGotEvent onPeggleGot = new OnPeggleGotEvent();
 
@@ -22,6 +22,7 @@ public class PeggleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SetUp();
         state = (int)STATE.ALIVE;
     }
 
@@ -47,5 +48,10 @@ public class PeggleScript : MonoBehaviour
             state = (int)STATE.DYING;
             onPeggleGot.Invoke(points);
         }
+    }
+
+    public virtual void SetUp()
+    {
+
     }
 }
