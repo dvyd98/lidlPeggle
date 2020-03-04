@@ -10,5 +10,5 @@ public class OrangePeggleScript : PeggleScript
     override public void SetUp()
     {
         points = 25;
-    }
+    }//
 }
