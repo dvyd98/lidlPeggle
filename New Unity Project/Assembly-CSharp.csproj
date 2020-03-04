@@ -62,13 +62,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BallScript.cs" />
-    <Compile Include="Assets\CatcherScript.cs" />
-    <Compile Include="Assets\GameControllerScript.cs" />
-    <Compile Include="Assets\PeggleScript.cs" />
-    <Compile Include="Assets\ScoreScript.cs" />
-    <Compile Include="Assets\ShooterScript.cs" />
-    <Compile Include="Assets\TextUpdaterScript.cs" />
+    <Compile Include="Assets\Scripts\BallScript.cs" />
+    <Compile Include="Assets\Scripts\CatcherScript.cs" />
+    <Compile Include="Assets\Scripts\GameControllerScript.cs" />
+    <Compile Include="Assets\Scripts\PeggleScript.cs" />
+    <Compile Include="Assets\Scripts\ShooterScript.cs" />
+    <Compile Include="Assets\Scripts\TextUpdaterScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Projects/lidlpeggle/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
