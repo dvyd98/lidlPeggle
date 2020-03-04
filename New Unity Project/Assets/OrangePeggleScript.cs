@@ -14,6 +14,7 @@ public class OrangePeggleScript : PeggleScript
 
     public override void ProcessEvents()
     {
+        onOrangePeggleGot.Invoke();
         Debug.Log("Orange peggle hit event");
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -7419986416319402514}
   m_Layer: 0
   m_Name: Peggle
-  m_TagString: Untagged
+  m_TagString: Peggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,4 +130,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3e77d0e18e91ec4b8a9d7dd89f0ed09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 5
   state: 0

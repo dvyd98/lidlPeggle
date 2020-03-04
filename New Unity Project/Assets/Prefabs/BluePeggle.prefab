@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 602359462594790643}
   m_Layer: 0
   m_Name: BluePeggle
-  m_TagString: Untagged
+  m_TagString: BluePeggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,3 +145,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003a7f11cfa86fc45b1b1ccb0d78fe85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 5
+  state: 0

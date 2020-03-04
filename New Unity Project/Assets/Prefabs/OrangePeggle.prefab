@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -4391287689539973264}
   m_Layer: 0
   m_Name: OrangePeggle
-  m_TagString: Untagged
+  m_TagString: OrangePeggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
