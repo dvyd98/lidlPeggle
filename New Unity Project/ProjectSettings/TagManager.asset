@@ -7,6 +7,9 @@ TagManager:
   - Shooter
   - UI
   - Catcher
+  - Peggle
+  - OrangePeggle
+  - BluePeggle
   layers:
   - Default
   - TransparentFX

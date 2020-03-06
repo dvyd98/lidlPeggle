@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControllerScript : MonoBehaviour
 {
@@ -42,7 +43,12 @@ public class GameControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OrangePegglesLeft == 0) gameWin = true;
+        if (OrangePegglesLeft == 0)
+        {
+            gameWin = true;
+            gameOver = true;
+            SceneManager.LoadScene("WinUIMenu", LoadSceneMode.Additive);
+        }
     }
 
     void updateCounter(int value)
