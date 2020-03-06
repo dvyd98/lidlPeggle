@@ -29,7 +29,7 @@ public class ShooterScript : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (!GameControllerScript.gameOver)
+        if (!GameControllerScript.gameOver && !GameControllerScript.pause)
         {
             lookAtMouse();
             if (Input.GetMouseButtonUp(0) && !isBallAlive && ballsLeft > 0)

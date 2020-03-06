@@ -10,6 +10,7 @@ public class GameControllerScript : MonoBehaviour
     public enum UIElements { TextBallCount, TextScore, TextOrangePeggle }
     public static bool gameOver = false;
     public static bool gameWin = false;
+    public static bool pause = false;
     public int score = 0;
     public int OrangePegglesLeft;
 
@@ -48,6 +49,19 @@ public class GameControllerScript : MonoBehaviour
             gameWin = true;
             gameOver = true;
             SceneManager.LoadScene("WinUIMenu", LoadSceneMode.Additive);
+        }
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (pause)
+            {
+                pause = false;
+                SceneManager.UnloadSceneAsync(1);
+            }
+            else
+            {
+                pause = true;
+                SceneManager.LoadScene("WinUIMenu", LoadSceneMode.Additive);
+            }
         }
     }
 

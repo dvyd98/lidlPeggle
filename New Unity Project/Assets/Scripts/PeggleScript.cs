@@ -29,15 +29,18 @@ public class PeggleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (state == (int)STATE.ALIVE);
-        else if (state == (int)STATE.DYING)
+        if (!GameControllerScript.pause)
         {
-            deathTimer += Time.deltaTime;
-            if (deathTimer % 60 > 2) state = (int)STATE.DEAD;
-        }
-        else if (state == (int)STATE.DEAD)
-        {
-            Destroy(gameObject);
+            if (state == (int)STATE.ALIVE) ;
+            else if (state == (int)STATE.DYING)
+            {
+                deathTimer += Time.deltaTime;
+                if (deathTimer % 60 > 2) state = (int)STATE.DEAD;
+            }
+            else if (state == (int)STATE.DEAD)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
