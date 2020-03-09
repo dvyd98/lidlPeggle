@@ -55,12 +55,12 @@ public class GameControllerScript : MonoBehaviour
             if (pause)
             {
                 pause = false;
-                SceneManager.UnloadSceneAsync(1);
+                SceneManager.UnloadSceneAsync(3);
             }
             else
             {
                 pause = true;
-                SceneManager.LoadScene("WinUIMenu", LoadSceneMode.Additive);
+                SceneManager.LoadScene("PauseUIMenu", LoadSceneMode.Additive);
             }
         }
     }
@@ -96,5 +96,16 @@ public class GameControllerScript : MonoBehaviour
     void updateOrangePeggleCount()
     {
         textOrangePeggles.GetComponent<UnityEngine.UI.Text>().text = "Orange peggles left: " + --OrangePegglesLeft;
+    }
+
+    public static int getCurrentLvl()
+    {
+        int countLoaded = SceneManager.sceneCount;
+        for (int i = 0; i < countLoaded; i++)
+        {
+            if (SceneManager.GetSceneAt(i).name == "Level1") return 1;
+        }
+
+        return 0;
     }
 }
