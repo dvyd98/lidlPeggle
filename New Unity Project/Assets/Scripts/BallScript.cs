@@ -21,7 +21,7 @@ public class BallScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameControllerScript.pause && !GameControllerScript.gameOver)
+        if (!GameControllerScript.menu && !GameControllerScript.gameOver)
         {
             firstPauseFrame = true;
             if (firstPlayFrame)

@@ -16,7 +16,7 @@ public class CatcherScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameControllerScript.pause && !GameControllerScript.gameOver)
+        if (!GameControllerScript.menu && !GameControllerScript.gameOver)
         {
             anim.enabled = true;
         }

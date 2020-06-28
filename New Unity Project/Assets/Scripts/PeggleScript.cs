@@ -29,9 +29,9 @@ public class PeggleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameControllerScript.pause)
+        if (!GameControllerScript.menu)
         {
-            if (state == (int)STATE.ALIVE) ;
+            if (state == (int)STATE.ALIVE);
             else if (state == (int)STATE.DYING)
             {
                 deathTimer += Time.deltaTime;

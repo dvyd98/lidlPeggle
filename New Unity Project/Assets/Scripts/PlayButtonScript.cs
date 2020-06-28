@@ -4,31 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ResumeButtonScript : MonoBehaviour
+public class PlayButtonScript : MonoBehaviour
 {
     private Button button;
     // Start is called before the first frame update
     void Start()
     {
         button = GetComponent<Button>();
-        button.onClick.AddListener(unPause);
+        button.onClick.AddListener(play);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    IEnumerator waiter()
+    void play()
     {
-        yield return new WaitForSeconds(0.1f);
-        GameControllerScript.menu = false;
-        SceneManager.UnloadSceneAsync(3);
-    }
-
-    void unPause()
-    {
-        StartCoroutine(waiter());
+        SceneManager.LoadScene("Level1", LoadSceneMode.Single);
     }
 }

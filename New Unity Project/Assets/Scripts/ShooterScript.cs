@@ -17,19 +17,19 @@ public class ShooterScript : MonoBehaviour
     public OnBallFiredEvent onBallFired = new OnBallFiredEvent();
     public UnityEvent onOutOfBalls = new UnityEvent();
 
-    public int ballsLeft;
+    public static int ballsLeft;
     public Boolean isBallAlive;
     // Start is called before the first frame update
     void Start()
     {
         isBallAlive = false;
-        ballsLeft = 15;
+        ballsLeft = 1;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (!GameControllerScript.gameOver && !GameControllerScript.pause)
+            if (!GameControllerScript.gameOver && !GameControllerScript.menu)
         {
             lookAtMouse();
             if (Input.GetMouseButtonUp(0) && !isBallAlive && ballsLeft > 0)
@@ -38,7 +38,10 @@ public class ShooterScript : MonoBehaviour
                 onBallFired.Invoke(--ballsLeft);
                 spawnProjectile();
             }
-            else if (!isBallAlive && ballsLeft <= 0) onOutOfBalls.Invoke();
+            else if (!isBallAlive && ballsLeft <= 0)
+            {
+                onOutOfBalls.Invoke();
+            }
         }
     }
     

@@ -22,7 +22,10 @@ public class RestartButtonScript : MonoBehaviour
 
     void Restart()
     {
-        GameControllerScript.pause = false;
+        GameControllerScript.menu = false;
+        GameControllerScript.gameOver = false;
+        GameControllerScript.gameWin = false;
+        ShooterScript.ballsLeft = 1;
         SceneManager.LoadScene("Level1", LoadSceneMode.Single);
     }
 }
